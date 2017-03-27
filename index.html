@@ -61,26 +61,73 @@
             </div>
             <div class="col-md-6 portfolio-item section" ng-repeat="tweet in tweets" ng-hide='filtered'>
             
-               
+               <!-- 
                 <h3>
-                    <a href="#">{{tweet.twitterName}}</a>
+                    <a href="#"></a>
                 </h3>
                 <a href="#">
                     <img class="img-responsive" src="http://placehold.it/700x400" alt="">
                 </a>
-                <p>{{tweet.description}}</p>
+                <p></p> -->
+
+                <section class="material-card">
+                    <div class="content">
+                        <img class="img-perfil" src="img/photo.jpg" alt="">
+                        <div class="header">
+                            <h3 class="user-title">{{tweet.twitterName}}</h3>
+                            <h4 class="user-name">@{{tweet.screenName}}</h4>
+                        </div>
+                        <button class="principal-button" style="display: none;">
+                            <div>
+                                <img class="plus" src="img/twiiter.png" alt=""><span>+</span>
+                            </div>
+                        </button>
+                        <p class="tweet">{{tweet.description}}</p>
+                        <p class="date-time">4:45pm - 15 Septiembre 2016</p>
+                    </div>
+                    <hr>
+                    <div class="icons">
+                        <img class="img-reply" src="img/reply.png" alt="">
+                        <img class="img-retweet" src="img/retweet.png" alt="">
+                        <img class="img-star" src="img/star.png" alt="">
+                        <img class="img-more" src="img/more.png" alt="">
+                    </div>
+                </section>
             </div>
 
             <div class="col-md-6 portfolio-item section" ng-repeat="tweet in filteredTweets" ng-show='filtered'>
                 
-                <p>{{tweet.categoryType}}</p>
+                <!-- <p>{{tweet.categoryType}}</p>
                 <h3>
                     <a href="#">{{tweet.twitterName}}</a>
                 </h3>
                 <a href="#">
                     <img class="img-responsive" src="http://placehold.it/700x400" alt="">
                 </a>
-                <p>{{tweet.description}}</p>
+                <p>{{tweet.description}}</p> -->
+                <section class="material-card">
+                    <div class="content">
+                        <img class="img-perfil" src="img/photo.jpg" alt="">
+                        <div class="header">
+                            <h3 class="user-title">{{tweet.twitterName}}</h3>
+                            <h4 class="user-name">@{{tweet.screenName}}</h4>
+                        </div>
+                        <button class="principal-button" style="display: none;">
+                            <div>
+                                <img class="plus" src="img/twiiter.png" alt=""><span>+</span>
+                            </div>
+                        </button>
+                        <p class="tweet">{{tweet.description}}</p>
+                        <p class="date-time">4:45pm - 15 Septiembre 2016</p>
+                    </div>
+                    <hr>
+                    <div class="icons">
+                        <img class="img-reply" src="img/reply.png" alt="">
+                        <img class="img-retweet" src="img/retweet.png" alt="">
+                        <img class="img-star" src="img/star.png" alt="">
+                        <img class="img-more" src="img/more.png" alt="">
+                    </div>
+                </section>
             </div>
             <!-- <div class="col-md-6 portfolio-item section">
                 <a href="#">
