@@ -18,7 +18,7 @@ body{
 }
 .img-perfil{
     width: 60px;
-    /*margin-top: 13px;*/
+    margin-top: 13px !important;
     margin-top: -35px;
     border-radius: 4px;
 }
@@ -140,8 +140,8 @@ input:focus{
     outline:none;
 }
 .content {
-    min-height: 175px;
-    margin-top: 28px;
+    /*min-height: 175px;*/
+    /*margin-top: 28px;*/
 }
 .bottom-icons{
     margin-right: 63px;
@@ -159,3 +159,30 @@ input:focus{
     font-size: 12px;
 }
 .tooltip {min-width:150px;}
+
+@media screen and (max-width: 990px) {
+    .header {
+        padding-left: 33px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding-left: 0px;
+    }
+    .material-card{
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .header {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding-left: 18px;
+    }
+}

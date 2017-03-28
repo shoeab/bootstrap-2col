@@ -71,38 +71,42 @@
 
                 <section class="material-card">
                     <div class="content">
-                        <a href="https://twitter.com/{{tweet.User.ScreenNameResponse}}">
+                        <div class="col-sm-1 col-xs-2">
+                            <a href="https://twitter.com/{{tweet.User.ScreenNameResponse}}">
                             <img class="img-perfil" src="{{tweet.User.ProfileImageUrl}}" alt="">
                         </a>
-                        <div class="header">
+                        </div>
+                        
+                        <div class="header col-sm-11 col-xs-10">
                             <a href="https://twitter.com/{{tweet.User.ScreenNameResponse}}">
                                 <strong class="user-title">{{tweet.User.Name}}</strong>
 
                             </a>
                             <span class="user-name" data-toggle="tooltip"  title="{{tweet.User.Name}}">@{{tweet.User.ScreenNameResponse}}</span>
                             &nbsp;&nbsp;
-                            <span class="date-time" data-toggle="tooltip"  title="{{tweet.CreatedAt | date:'h:mm a - MMM d y '}}">{{tweet.CreatedAt | date:'MMM d y '}}</span>
+                            <a href="https://twitter.com/{{tweet.User.ScreenNameResponse}}/status/{{tweet.StatusID}}" class="date-time" data-toggle="tooltip"  title="{{tweet.CreatedAt | date:'h:mm a - MMM d y '}}">{{tweet.CreatedAt | date:'MMM d y '}}</a>
+                            <button class="principal-button" style="display: none;">
+                                <div>
+                                    <img class="plus" src="img/twiiter.png" alt=""><span>+</span>
+                                </div>
+                            </button>
+                            <p class="tweet" ng-bind-html="tweet.Text"></p>
+                            <p class="tweet" ng-bind-html="tweet.Source"></p>
+                            
+                            <span ng-repeat="media in tweet.Entities.MediaEntities">
+                                <img src="{{media.MediaUrl}}" ng-if="media.Type='photo'" class="img-responsive">
+                            </span>
                         </div>
-                        <button class="principal-button" style="display: none;">
-                            <div>
-                                <img class="plus" src="img/twiiter.png" alt=""><span>+</span>
-                            </div>
-                        </button>
-                        <p class="tweet" ng-bind-html="tweet.Text"></p>
-                        <p class="tweet" ng-bind-html="tweet.Source"></p>
-                        {{Entities.MediaEntities}}
-                        <span ng-repeat="media in tweet.Entities.MediaEntities">
-                            <img src="{{media.MediaUrl}}" ng-if="media.Type='photo'" class="img-responsive">
-                        </span>
+                        
                         
                     </div>
                     <hr>
                     <div class="icons">
-                        <a href="JavaScript:void(0)" class="bottom-icons">
+                        <a href="JavaScript:void(0)" style="text-decoration:none;" class="bottom-icons">
                             <img class="img-reply" src="img/reply.png" alt="">
                             <span class="bottom-icon-count">{{tweet.User.Status.RetweetCount}}</span>
                         </a>
-                        <a href="JavaScript:void(0)" class="bottom-icons">
+                        <a href="JavaScript:void(0)" style="text-decoration:none;" class="bottom-icons">
                             <img class="img-retweet" src="img/retweet.png" alt="">
                             <span class="bottom-icon-count">{{tweet.User.Status.RetweetCount}}</span>
                         </a>
