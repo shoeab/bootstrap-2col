@@ -33,6 +33,10 @@ body{
 .header .user-title{
     margin: 0px;
     margin-bottom: 0.5px;
+    color: #14171a;
+}
+.user-title:hover{
+    color: #1F98C7;
 }
 .header .user-name{
     margin: 0px;
@@ -137,14 +141,21 @@ input:focus{
 }
 .content {
     min-height: 175px;
+    margin-top: 28px;
 }
 .bottom-icons{
     margin-right: 63px;
 
 }
-
 .bottom-icon-count{
     margin-top: 7px;
     color: #aab8c2;
     font-weight: 600;
 }
+.user-name{
+    font-size: 12px;
+}
+.date-time{
+    font-size: 12px;
+}
+.tooltip {min-width:150px;}
