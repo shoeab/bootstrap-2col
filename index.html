@@ -25,6 +25,7 @@
     <![endif]-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular-sanitize.js"></script>
 
 </head>
 
@@ -37,7 +38,7 @@
 
         <!-- Page Header -->
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-6">
                 <h1 class="page-header">Page Heading
                     <small>Secondary Text</small>
                 </h1>
@@ -47,7 +48,7 @@
 
         <!-- Projects Row -->
         <div class="row">
-            <div class="col-md-12">{{categoryFilter}}
+            <!-- <div class="col-md-12">{{categoryFilter}}
                 <select ng-model="categoryFilter" ng-change='filterTweet()'>
                     <option></option>
                     <option ng-repeat='category in categories' value="{{category.id}}">
@@ -56,10 +57,8 @@
 
                     </option>
                 </select>
-                <!-- <select ng-model="selectedName" ng-options="x.id for x in categories" ng-change='filterTweet()'>
-                </select> -->
-            </div>
-            <div class="col-md-6 portfolio-item section" ng-repeat="tweet in tweets" ng-hide='filtered'>
+            </div> -->
+            <div class="col-md-12 portfolio-item section" ng-repeat="tweet in tweets" ng-hide='filtered'>
             
                <!-- 
                 <h3>
@@ -72,25 +71,45 @@
 
                 <section class="material-card">
                     <div class="content">
-                        <img class="img-perfil" src="img/photo.jpg" alt="">
+                        <a href="https://twitter.com/{{tweet.User.ScreenNameResponse}}">
+                            <img class="img-perfil" src="{{tweet.User.ProfileImageUrl}}" alt="">
+                        </a>
                         <div class="header">
-                            <h3 class="user-title">{{tweet.twitterName}}</h3>
-                            <h4 class="user-name">@{{tweet.screenName}}</h4>
+                            <a href="https://twitter.com/{{tweet.User.ScreenNameResponse}}">
+                                <h3 class="user-title">{{tweet.User.Name}}</h3>
+
+                            </a>
+                            <h4 class="user-name">@{{tweet.User.ScreenNameResponse}}</h4>
                         </div>
                         <button class="principal-button" style="display: none;">
                             <div>
                                 <img class="plus" src="img/twiiter.png" alt=""><span>+</span>
                             </div>
                         </button>
-                        <p class="tweet">{{tweet.description}}</p>
-                        <p class="date-time">4:45pm - 15 Septiembre 2016</p>
+                        <p class="tweet" ng-bind-html="tweet.Text"></p>
+                        <p class="tweet" ng-bind-html="tweet.Source"></p>
+                        {{Entities.MediaEntities}}
+                        <span ng-repeat="media in tweet.Entities.MediaEntities">
+                            <img src="{{media.MediaUrl}}" ng-if="media.Type='photo'" class="img-responsive">
+                        </span>
+                        <p class="date-time">{{tweet.CreatedAt | date:'MMM d, y h:mm a'}}</p>
                     </div>
                     <hr>
                     <div class="icons">
-                        <img class="img-reply" src="img/reply.png" alt="">
-                        <img class="img-retweet" src="img/retweet.png" alt="">
-                        <img class="img-star" src="img/star.png" alt="">
-                        <img class="img-more" src="img/more.png" alt="">
+                        <a href="JavaScript:void(0)" class="bottom-icons">
+                            <img class="img-reply" src="img/reply.png" alt="">
+                            <span class="bottom-icon-count">{{tweet.User.Status.RetweetCount}}</span>
+                        </a>
+                        <a href="JavaScript:void(0)" class="bottom-icons">
+                            <img class="img-retweet" src="img/retweet.png" alt="">
+                            <span class="bottom-icon-count">{{tweet.User.Status.RetweetCount}}</span>
+                        </a>
+                        <a href="JavaScript:void(0)" class="bottom-icons">
+                            <img class="img-star" src="img/star.png" alt="">
+                        </a>
+                        <a href="JavaScript:void(0)" class="bottom-icons">
+                            <img class="img-more" src="img/more.png" alt="">
+                        </a>
                     </div>
                 </section>
             </div>

@@ -98,7 +98,6 @@ hr{
 }
 .icons img{
     width: 33px;
-    margin-right: 63px;
     -webkit-filter: contrast(7%);
     filter: contrast(7%);
     cursor: pointer;
@@ -138,4 +137,14 @@ input:focus{
 }
 .content {
     min-height: 175px;
+}
+.bottom-icons{
+    margin-right: 63px;
+
+}
+
+.bottom-icon-count{
+    margin-top: 7px;
+    color: #aab8c2;
+    font-weight: 600;
 }
