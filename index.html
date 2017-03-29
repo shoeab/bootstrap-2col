@@ -84,7 +84,7 @@
                             </a>
                             <span class="user-name" data-toggle="tooltip"  title="{{tweet.User.Name}}">@{{tweet.User.ScreenNameResponse}}</span>
                             &nbsp;&nbsp;
-                            <a href="https://twitter.com/{{tweet.User.ScreenNameResponse}}/status/{{tweet.StatusID}}" class="date-time" data-toggle="tooltip"  title="{{tweet.CreatedAt | date:'h:mm a - MMM d y '}}">{{tweet.CreatedAt | date:'MMM d y '}}</a>
+                            <a href="https://twitter.com/{{tweet.ScreenName}}/status/{{tweet.StatusID}}" class="date-time" data-toggle="tooltip"  title="{{tweet.CreatedAt | date:'h:mm a - MMM d y '}}">{{tweet.CreatedAt | date:'MMM d y '}}</a>
                             <button class="principal-button" style="display: none;">
                                 <div>
                                     <img class="plus" src="img/twiiter.png" alt=""><span>+</span>
@@ -104,14 +104,15 @@
                     <div class="icons">
                         <a href="JavaScript:void(0)" style="text-decoration:none;" class="bottom-icons">
                             <img class="img-reply" src="img/reply.png" alt="">
-                            <span class="bottom-icon-count">{{tweet.User.Status.RetweetCount}}</span>
+                            <!-- <span class="bottom-icon-count">{{tweet.User.Status.RetweetCount}}</span> -->
                         </a>
                         <a href="JavaScript:void(0)" style="text-decoration:none;" class="bottom-icons">
                             <img class="img-retweet" src="img/retweet.png" alt="">
-                            <span class="bottom-icon-count">{{tweet.User.Status.RetweetCount}}</span>
+                            <span class="bottom-icon-count">{{tweet.RetweetCount}}</span>
                         </a>
-                        <a href="JavaScript:void(0)" class="bottom-icons">
-                            <img class="img-star" src="img/star.png" alt="">
+                        <a href="JavaScript:void(0)" style="text-decoration:none;" class="bottom-icons">
+                            <img class="img-star" style="height: 28px;" src="img/love.png" alt="">
+                            <span class="bottom-icon-count">{{tweet.FavoriteCount}}</span>
                         </a>
                         <a href="JavaScript:void(0)" class="bottom-icons">
                             <img class="img-more" src="img/more.png" alt="">
