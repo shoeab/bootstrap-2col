@@ -1,0 +1,133 @@
+{
+   "data": [
+      {
+         "message": "Resolved: Decision to revert to single firewall made and stability restored on single firewall. https://t.co/YIpBB0sk54",
+         "created_time": "2017-04-06T22:43:52+0000",
+         "id": "181765761882376_1390121917713415"
+      },
+      {
+         "message": "Identified: Upgrading incident to Category 2 as a result of the extended time-frame and working toward a soluti... https://t.co/YIpBB0sk54",
+         "created_time": "2017-04-06T22:10:46+0000",
+         "id": "181765761882376_1390105197715087"
+      },
+      {
+         "message": "Identified: Service restored to primary firewall; HUIT team restoring service to secondary. High availability e... https://t.co/YIpBB0sk54",
+         "created_time": "2017-04-06T21:04:43+0000",
+         "id": "181765761882376_1390069394385334"
+      },
+      {
+         "message": "Identified: Wireless Network access is interrupted. HUIT teams are responding. https://t.co/YIpBB0sk54",
+         "created_time": "2017-04-06T19:07:06+0000",
+         "id": "181765761882376_1389945747731032"
+      },
+      {
+         "message": "Resolved: Splunk Interruption resolved by freeing up disk space. https://t.co/0cYpWhCEFp",
+         "created_time": "2017-04-06T13:46:31+0000",
+         "id": "181765761882376_1389680707757536"
+      },
+      {
+         "message": "Completed: The scheduled maintenance has been completed. https://t.co/Q0ubdhHLeC",
+         "created_time": "2017-04-04T02:06:59+0000",
+         "id": "181765761882376_1387094271349513"
+      },
+      {
+         "message": "Resolved: Users experienced long cycle or hung authentication when attempting to login and logout of PeopleSoft... https://t.co/3lrdT5Puih",
+         "created_time": "2017-04-03T14:53:29+0000",
+         "id": "181765761882376_1386628191396121"
+      },
+      {
+         "message": "Resolved: Wireless network service restored after power cycle of switch. https://t.co/lMxNWUObGG",
+         "created_time": "2017-03-29T13:07:45+0000",
+         "id": "181765761882376_1381636691895271"
+      },
+      {
+         "message": "Completed: The scheduled maintenance has been completed. https://t.co/4SXq1ZGKTv",
+         "created_time": "2017-03-24T12:00:33+0000",
+         "id": "181765761882376_1376861912372749"
+      },
+      {
+         "message": "In Progress: Scheduled maintenance is currently in progress. We will provide updates as necessary. https://t.co/4SXq1ZGKTv",
+         "created_time": "2017-03-24T02:00:25+0000",
+         "id": "181765761882376_1376507322408208"
+      },
+      {
+         "message": "Scheduled (3/23/17 10:00PM EDT): On Thursday, March 23rd starting at 10:00PM through 8:00AM Friday, March 24th,... https://t.co/4SXq1ZGKTv",
+         "created_time": "2017-03-23T20:40:23+0000",
+         "id": "181765761882376_1376307285761545"
+      },
+      {
+         "message": "Resolved: Phone service to HUIT Service Desk (617 495-7777) is restored. https://t.co/hEb47fDRPX",
+         "created_time": "2017-03-22T18:05:08+0000",
+         "id": "181765761882376_1375237619201845"
+      },
+      {
+         "message": "Investigating: Please be advised calls to HUIT Service Desk (617 495-7777) are currently being directed voicema... https://t.co/hEb47fDRPX",
+         "created_time": "2017-03-22T17:48:55+0000",
+         "id": "181765761882376_1375225542536386"
+      },
+      {
+         "message": "Completed: All networking equipment are confirmed to be operating normally. https://t.co/Ff9Xxm1H1q",
+         "created_time": "2017-03-17T13:49:40+0000",
+         "id": "181765761882376_1370647412994199"
+      },
+      {
+         "message": "Scheduled (3/17/17  6:00AM EDT): To diagnose cause of last week's unplanned power outage, power will be shut do... https://t.co/Ff9Xxm1H1q",
+         "created_time": "2017-03-17T06:25:59+0000",
+         "id": "181765761882376_1370371386355135"
+      },
+      {
+         "message": "Completed: The scheduled maintenance has been completed. https://t.co/bc95nQFSQh",
+         "created_time": "2017-03-14T01:00:15+0000",
+         "id": "181765761882376_1367692979956309"
+      },
+      {
+         "message": "Resolved: Restarted 4-HarvardKey host servers to synchronize timing. https://t.co/41AiPPf3nv",
+         "created_time": "2017-03-13T18:11:25+0000",
+         "id": "181765761882376_1367456773313263"
+      },
+      {
+         "message": "Resolved: Canvas reported service interruptions for some users where the impact affected components that relied... https://t.co/k3nSJpxVbt",
+         "created_time": "2017-03-13T16:46:02+0000",
+         "id": "181765761882376_1367403716651902"
+      },
+      {
+         "message": "Investigating: Reports of delays of 3-5 minutes propagating HarvardKey data. https://t.co/41AiPPf3nv",
+         "created_time": "2017-03-13T16:05:49+0000",
+         "id": "181765761882376_1367378633321077"
+      },
+      {
+         "message": "Investigating: HUIT is receiving reports on intermittent login access to Canvas. Some users are receiving a sig... https://t.co/k3nSJpxVbt",
+         "created_time": "2017-03-13T15:42:57+0000",
+         "id": "181765761882376_1367365016655772"
+      },
+      {
+         "message": "Resolved: Power was restored just before 2am and the Network has been confirmed to be back up. https://t.co/mxFFead0LA",
+         "created_time": "2017-03-11T07:33:58+0000",
+         "id": "181765761882376_1365211076871166"
+      },
+      {
+         "message": "Identified: Wired & Wireless networking is currently interrupted at the Science Center due to a power outage. https://t.co/mxFFeauCaa",
+         "created_time": "2017-03-10T20:40:27+0000",
+         "id": "181765761882376_1364767353582205"
+      },
+      {
+         "message": "Resolved: Starting approximately 2:53pm, Advance became unavailable. The database was restarted and service res... https://t.co/LlG7cRXgsL",
+         "created_time": "2017-03-07T20:26:18+0000",
+         "id": "181765761882376_1361447717247502"
+      },
+      {
+         "message": "In Progress: Scheduled maintenance is currently in progress. We will provide updates as necessary. https://t.co/H8HO4EYoka",
+         "created_time": "2017-03-06T15:00:27+0000",
+         "id": "181765761882376_1360309687361305"
+      },
+      {
+         "message": "Resolved: Servers were recycled which restored service. https://t.co/Z5NmkzcHyn",
+         "created_time": "2017-03-04T00:03:57+0000",
+         "id": "181765761882376_1357596920965915"
+      }
+   ],
+   "paging": {
+      "previous": "https://graph.facebook.com/v2.5/181765761882376/posts?since=1491518632&access_token=468809556642257|7ac7c3464c43e11463a0c8aa35e36a0a&limit=25&__paging_token=enc_AdAL2GWhrZCbLc9sKDLwoypHFhqNSZCp1geBovZAPtKrZCT0Vu1RAeBzTL4f9B4luAWZCNn2ZChZCTiLiz7EavywML2DJlrS4XIqGexgOZAoBFde1ORK5gZDZD&__previous=1",
+      "next": "https://graph.facebook.com/v2.5/181765761882376/posts?access_token=468809556642257|7ac7c3464c43e11463a0c8aa35e36a0a&limit=25&until=1488585837&__paging_token=enc_AdBAELS1dhet9pZAcw9mX9MZBsYdS1aFtOWZAFARuL80znWiS5Yj3tv78kSZBIqOdh6kkClXMNZBJCfkZCGwnizDz10Rs4cz84nUBCbZBHR28WIGTjDZBwZDZD"
+   }
+}

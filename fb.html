@@ -60,16 +60,16 @@
                     </option>
                 </select>
             </div> -->
-            <div class="col-md-6 portfolio-item section" ng-repeat="tweet in tweets" ng-hide='filtered'>
+            <div class="col-md-6 portfolio-item section" ng-repeat="post in posts" ng-hide='filtered'>
 	            <div class="post-show">
 					<div class="post-show-inner">
 						<div class="post-header">
 							<div class="post-left-box">
-								<div class="id-img-box"><img src="images/profile.jpg"></div>
+								<div class="id-img-box"><img src="https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/644356_415639241828359_2131118323_n.png?oh=f1c0e003737c8e42d47b926ef5597611&oe=5994A9B0"></div>
 								<div class="id-name">
 									<ul>
-										<li><a href="#">aizaz.dinho</a></li>
-										<li class="time-post"><small>just now</small>&nbsp;&nbsp;<img class="_1lbg img" src="img/icon-public.png" alt="" width="12" height="12"></li>
+										<li><a href="https://www.facebook.com/HarvardUniversityIT">Harvard University Information Technology</a></li>
+										<li class="time-post"><small>{{post.created_time | date:'medium'}}</small>&nbsp;&nbsp;<img class="_1lbg img" src="img/icon-public.png" alt="" width="12" height="12"></li>
 									</ul>
 								</div>
 							</div>
@@ -77,8 +77,7 @@
 						</div>
 					
 							<div class="post-body">
-							<div class="post-header-text text-left">
-								Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all 
+							<div class="post-header-text text-left" ng-bind-html="post.message">
 							</div>
 							<div class="post-footer">
 								<div class="post-footer-inner">
@@ -94,7 +93,7 @@
 				</div>
             </div>
 
-            <div class="col-md-6 portfolio-item section" ng-repeat="tweet in filteredTweets" ng-show='filtered'>
+            <div class="col-md-6 portfolio-item section" ng-repeat="post in posts" ng-show='filtered'>
                 
                 <!-- <p>{{tweet.categoryType}}</p>
                 <h3>
