@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>2 Col Portfolio - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/2-col-portfolio.css" rel="stylesheet">
+
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular-sanitize.js"></script>
+
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+
+    
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="page-header">Page Heading
+                    <small>Secondary Text</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <!-- <div class="col-md-12">{{categoryFilter}}
+                <select ng-model="categoryFilter" ng-change='filterTweet()'>
+                    <option></option>
+                    <option ng-repeat='category in categories' value="{{category.id}}">
+
+                        {{category.id}}
+
+                    </option>
+                </select>
+            </div> -->
+            <div class="col-md-6 portfolio-item section" ng-repeat="tweet in tweets" ng-hide='filtered'>
+	            <div class="post-show">
+					<div class="post-show-inner">
+						<div class="post-header">
+							<div class="post-left-box">
+								<div class="id-img-box"><img src="images/profile.jpg"></div>
+								<div class="id-name">
+									<ul>
+										<li><a href="#">aizaz.dinho</a></li>
+										<li class="time-post"><small>just now</small>&nbsp;&nbsp;<img class="_1lbg img" src="img/icon-public.png" alt="" width="12" height="12"></li>
+									</ul>
+								</div>
+							</div>
+							<div class="post-right-box"></div>
+						</div>
+					
+							<div class="post-body">
+							<div class="post-header-text text-left">
+								Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all Hi all 
+							</div>
+							<div class="post-footer">
+								<div class="post-footer-inner">
+									<ul>
+										<li><a href="#">Like</a></li>
+										<li><a href="#">Comment</a></li>
+										<li><a href="#">Share</a></li>
+									</ul>	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+
+            <div class="col-md-6 portfolio-item section" ng-repeat="tweet in filteredTweets" ng-show='filtered'>
+                
+                <!-- <p>{{tweet.categoryType}}</p>
+                <h3>
+                    <a href="#">{{tweet.twitterName}}</a>
+                </h3>
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                </a>
+                <p>{{tweet.description}}</p> -->
+                <section class="material-card">
+                    <div class="content">
+                        <img class="img-perfil" src="img/photo.jpg" alt="">
+                        <div class="header">
+                            <h3 class="user-title">{{tweet.twitterName}}</h3>
+                            <h4 class="user-name">@{{tweet.screenName}}</h4>
+                        </div>
+                        <button class="principal-button" style="display: none;">
+                            <div>
+                                <img class="plus" src="img/twiiter.png" alt=""><span>+</span>
+                            </div>
+                        </button>
+                        <p class="tweet">{{tweet.description}}</p>
+                        <p class="date-time">4:45pm - 15 Septiembre 2016</p>
+                    </div>
+                    <hr>
+                    <div class="icons">
+                        <img class="img-reply" src="img/reply.png" alt="">
+                        <img class="img-retweet" src="img/retweet.png" alt="">
+                        <img class="img-star" src="img/star.png" alt="">
+                        <img class="img-more" src="img/more.png" alt="">
+                    </div>
+                </section>
+            </div>
+            <!-- <div class="col-md-6 portfolio-item section">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h3>
+                    <a href="#">Project Two</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div> -->
+        </div>
+        <!-- /.row -->
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(window).load(function(){
+            $('[data-toggle="tooltip"]').tooltip(); 
+        });
+    </script>
+
+</body>
+
+</html>
+
+
