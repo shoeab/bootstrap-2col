@@ -39,13 +39,18 @@
     <div class="container">
 
         <!-- Page Header -->
-        <div class="row">
-            <div class="col-lg-6">
-                <h1 class="page-header">Facebook
+        <!-- <div class="row">
+            <div class="col-md-6">
+                <h1 class="page-header">Harvard University
                     <small>posts</small>
                 </h1>
             </div>
-        </div>
+            <div class="col-md-6">
+                <h1 class="page-header">Luther College
+                    <small>posts</small>
+                </h1>
+            </div>
+        </div> -->
         <!-- /.row -->
 
         <!-- Projects Row -->
@@ -60,37 +65,84 @@
                     </option>
                 </select>
             </div> -->
-            <div class="col-md-6 portfolio-item section" ng-repeat="post in posts" ng-hide='filtered'>
-	            <div class="post-show">
-					<div class="post-show-inner">
-						<div class="post-header">
-							<div class="post-left-box">
-								<div class="id-img-box"><a href="https://www.facebook.com/HarvardUniversityIT"><img src="img/harvard-uni-it.png"></a></div>
-								<div class="id-name">
-									<ul>
-										<li><a href="https://www.facebook.com/HarvardUniversityIT">Harvard University Information Technology</a></li>
-										<li class="time-post"><small>{{post.created_time | date:'medium'}}</small>&nbsp;&nbsp;<img class="_1lbg img" src="img/icon-public.png" alt="" width="12" height="12"></li>
-									</ul>
-								</div>
-							</div>
-							<div class="post-right-box"></div>
-						</div>
-					
-							<div class="post-body">
-							<div class="post-header-text text-left" ng-bind-html="post.message">
-							</div>
-							<div class="post-footer">
-								<div class="post-footer-inner">
-									<ul>
-										<li><a href="#">Like</a></li>
-										<li><a href="#">Comment</a></li>
-										<li><a href="#">Share</a></li>
-									</ul>	
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+            <div class="col-md-6">
+                <h1 class="page-header">Harvard University
+                    <small>posts</small>
+                </h1>
+                <div class="col-md-12 portfolio-item section" ng-repeat="post in posts" ng-hide='filtered'>
+    	            <div class="post-show">
+    					<div class="post-show-inner">
+    						<div class="post-header">
+    							<div class="post-left-box">
+    								<div class="id-img-box"><a href="https://www.facebook.com/HarvardUniversityIT"><img src="img/harvard-uni-it.png"></a></div>
+    								<div class="id-name">
+    									<ul>
+    										<li><a href="https://www.facebook.com/HarvardUniversityIT">Harvard University Information Technology</a></li>
+    										<li class="time-post"><small>{{post.created_time | date:'medium'}}</small>&nbsp;&nbsp;<img class="_1lbg img" src="img/icon-public.png" alt="" width="12" height="12"></li>
+    									</ul>
+    								</div>
+    							</div>
+    							<div class="post-right-box"></div>
+    						</div>
+    					
+    							<div class="post-body">
+    							<div class="post-header-text text-left" ng-bind-html="post.message">
+    							</div>
+    							<div class="post-footer">
+    								<div class="post-footer-inner">
+    									<ul>
+    										<li><a href="#">Like</a></li>
+    										<li><a href="#">Comment</a></li>
+    										<li><a href="#">Share</a></li>
+    									</ul>	
+    								</div>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <h1 class="page-header">Luther College
+                    <small>posts</small>
+                </h1>
+                <div class="col-md-12 portfolio-item section" ng-repeat="post in posts_luther" ng-hide='filtered'>
+                    <div class="post-show">
+                        <div class="post-show-inner">
+                            <div class="post-header">
+                                <div class="post-left-box">
+                                    <div class="id-img-box"><a href="https://www.facebook.com/HarvardUniversityIT"><img src="img/harvard-uni-it.png"></a></div>
+                                    <div class="id-name">
+                                        <ul>
+                                            <li><a href="https://www.facebook.com/luthercollege">Luther College</a></li>
+                                            <li class="time-post"><small>{{post.created_time | date:'medium'}}</small>&nbsp;&nbsp;<img class="_1lbg img" src="img/icon-public.png" alt="" width="12" height="12"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="post-right-box"></div>
+                            </div>
+                        
+                                <div class="post-body">
+                                <div class="post-header-text text-left" ng-if="post.picture">
+                                <img src="{{post.picture}}" class="img-responsive" style="min-width: 200px; height: auto;">
+                                </div>
+                                <div class="post-header-text text-left" ng-bind-html="post.message">
+                                </div>
+                                <div class="post-footer">
+                                    <div class="post-footer-inner">
+                                        <ul>
+                                            <li><a href="#">Like</a></li>
+                                            <li><a href="#">Comment</a></li>
+                                            <li><a href="#">Share</a></li>
+                                        </ul>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             

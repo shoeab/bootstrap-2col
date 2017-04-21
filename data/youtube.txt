@@ -1,0 +1,645 @@
+{
+  "kind": "youtube#searchResult",
+  "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/TfFEAQaAA7A7cIyyNQ01lYCNRuE\"",
+  "id": {
+    "kind": "youtube#video",
+    "videoId": "C5pKtnmHTxg"
+  },
+  "snippet": {
+    "publishedAt": "2013-10-21T20:03:08Z",
+    "channelId": "UCLv7Gzc3VTO6ggFlXY0sOyw",
+    "title": "Anything Could Happen at Harvard",
+    "description": "From Harvard College Admissions and Financial Aid, experience undergraduate life at Harvard through the people who know it and love it.",
+    "thumbnails": {
+      "default": {
+        "url": "https://i.ytimg.com/vi/C5pKtnmHTxg/default.jpg",
+        "width": 120,
+        "height": 90
+      },
+      "medium": {
+        "url": "https://i.ytimg.com/vi/C5pKtnmHTxg/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+      },
+      "high": {
+        "url": "https://i.ytimg.com/vi/C5pKtnmHTxg/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "channelTitle": "Harvard University",
+    "liveBroadcastContent": "none"
+  }
+}
+
+{
+  "kind": "youtube#searchResult",
+  "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/6JWju8szEh-JAkar8xtt00ITIFk\"",
+  "id": {
+    "kind": "youtube#video",
+    "videoId": "A4X3fFWj5H0"
+  },
+  "snippet": {
+    "publishedAt": "2015-07-18T11:37:50Z",
+    "channelId": "UCgkdxJhxAniahRUSJjqtRRw",
+    "title": "ONE DAY AT THE HARVARD UNIVERSITY",
+    "description": "Click here for the video How to get into HARVARD SUMMER SCHOOL https://www.youtube.com/watch?v=3RSTjhN87pg In this short movie I show my day in the ...",
+    "thumbnails": {
+      "default": {
+        "url": "https://i.ytimg.com/vi/A4X3fFWj5H0/default.jpg",
+        "width": 120,
+        "height": 90
+      },
+      "medium": {
+        "url": "https://i.ytimg.com/vi/A4X3fFWj5H0/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+      },
+      "high": {
+        "url": "https://i.ytimg.com/vi/A4X3fFWj5H0/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "channelTitle": "vladslife",
+    "liveBroadcastContent": "none"
+  }
+}
+
+{
+  "kind": "youtube#searchResult",
+  "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/phZ_OH56nu9e2iTJSmgV6FrHVTE\"",
+  "id": {
+    "kind": "youtube#video",
+    "videoId": "Pd9bYdelBX0"
+  },
+  "snippet": {
+    "publishedAt": "2015-02-21T20:07:18Z",
+    "channelId": "UCoPmVTY5j-UwwCshRwK6GLg",
+    "title": "Harvard University: Q&A",
+    "description": "Last video I asked you guys to send me questions you had about Harvard, and you TURNED UP!!! I got somewhere near 200 questions, so here are some of my ...",
+    "thumbnails": {
+      "default": {
+        "url": "https://i.ytimg.com/vi/Pd9bYdelBX0/default.jpg",
+        "width": 120,
+        "height": 90
+      },
+      "medium": {
+        "url": "https://i.ytimg.com/vi/Pd9bYdelBX0/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+      },
+      "high": {
+        "url": "https://i.ytimg.com/vi/Pd9bYdelBX0/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "channelTitle": "YesReneau",
+    "liveBroadcastContent": "none"
+  }
+}
+
+{
+  "kind": "youtube#searchResult",
+  "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/bxz6zMfHVJEYTtGfrnkNclqreZ4\"",
+  "id": {
+    "kind": "youtube#video",
+    "videoId": "7xEeHMEJX3o"
+  },
+  "snippet": {
+    "publishedAt": "2017-03-02T04:54:36Z",
+    "channelId": "UC01sF0wMt4tB2O9krpJ_8Tg",
+    "title": "A DAY AT HARVARD UNIVERSITY",
+    "description": "I hope you guys liked this video about my college visit to Harvard! This is the first of my college tours series; the next one is MIT!",
+    "thumbnails": {
+      "default": {
+        "url": "https://i.ytimg.com/vi/7xEeHMEJX3o/default.jpg",
+        "width": 120,
+        "height": 90
+      },
+      "medium": {
+        "url": "https://i.ytimg.com/vi/7xEeHMEJX3o/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+      },
+      "high": {
+        "url": "https://i.ytimg.com/vi/7xEeHMEJX3o/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "channelTitle": "Study To Success",
+    "liveBroadcastContent": "none"
+  }
+}
+
+{
+  "kind": "youtube#searchResult",
+  "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/e48SIv22-7Nt_90qQU3C8XBnYG0\"",
+  "id": {
+    "kind": "youtube#video",
+    "videoId": "vJmrZTmVlDQ"
+  },
+  "snippet": {
+    "publishedAt": "2014-08-20T16:15:16Z",
+    "channelId": "UCoPmVTY5j-UwwCshRwK6GLg",
+    "title": "How to Get into Harvard",
+    "description": "A lot of you have been asking me for advice on how to get into Harvard, so here's my advice! I'm only a student, I'm not an admissions officer, so I don't claim to ...",
+    "thumbnails": {
+      "default": {
+        "url": "https://i.ytimg.com/vi/vJmrZTmVlDQ/default.jpg",
+        "width": 120,
+        "height": 90
+      },
+      "medium": {
+        "url": "https://i.ytimg.com/vi/vJmrZTmVlDQ/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+      },
+      "high": {
+        "url": "https://i.ytimg.com/vi/vJmrZTmVlDQ/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "channelTitle": "YesReneau",
+    "liveBroadcastContent": "none"
+  }
+}
+
+{
+  "kind": "youtube#searchResult",
+  "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/QE0EhMz_aFT-fWMKEyM38fBKarM\"",
+  "id": {
+    "kind": "youtube#video",
+    "videoId": "AYAHkql75qM"
+  },
+  "snippet": {
+    "publishedAt": "2015-04-15T14:04:28Z",
+    "channelId": "UCLv7Gzc3VTO6ggFlXY0sOyw",
+    "title": "Home at Harvard",
+    "description": "No matter where you come from or what you plan to do, you'll find a home at Harvard.",
+    "thumbnails": {
+      "default": {
+        "url": "https://i.ytimg.com/vi/AYAHkql75qM/default.jpg",
+        "width": 120,
+        "height": 90
+      },
+      "medium": {
+        "url": "https://i.ytimg.com/vi/AYAHkql75qM/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+      },
+      "high": {
+        "url": "https://i.ytimg.com/vi/AYAHkql75qM/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "channelTitle": "Harvard University",
+    "liveBroadcastContent": "none"
+  }
+}
+
+{
+  "kind": "youtube#searchResult",
+  "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/lsWn8Th6lWZOTXGbVqaKAkPiRVs\"",
+  "id": {
+    "kind": "youtube#video",
+    "videoId": "9eUl4gF0ED4"
+  },
+  "snippet": {
+    "publishedAt": "2016-05-29T18:37:36Z",
+    "channelId": "UCupvZG-5ko_eiXAupbDfxWw",
+    "title": "Harvard graduate's unique speech goes viral",
+    "description": "Harvard University has called 2016 graduate Donovan Livingston's spoken-verse commencement speech \"one of the most powerful, heartfelt student speeches ...",
+    "thumbnails": {
+      "default": {
+        "url": "https://i.ytimg.com/vi/9eUl4gF0ED4/default.jpg",
+        "width": 120,
+        "height": 90
+      },
+      "medium": {
+        "url": "https://i.ytimg.com/vi/9eUl4gF0ED4/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+      },
+      "high": {
+        "url": "https://i.ytimg.com/vi/9eUl4gF0ED4/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "channelTitle": "CNN",
+    "liveBroadcastContent": "none"
+  }
+}
+
+{
+  "kind": "youtube#searchResult",
+  "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/bWMo_3hCzFO3vksTVIEI6FuVenM\"",
+  "id": {
+    "kind": "youtube#video",
+    "videoId": "0JUN9aDxVmI"
+  },
+  "snippet": {
+    "publishedAt": "2016-07-11T16:31:33Z",
+    "channelId": "UCLv7Gzc3VTO6ggFlXY0sOyw",
+    "title": "Advanced Algorithms (COMPSCI 224), Lecture 1",
+    "description": "Logistics, course topics, word RAM, predecessor, van Emde Boas, y-fast tries. Please see Problem 1 of Assignment 1 at ...",
+    "thumbnails": {
+      "default": {
+        "url": "https://i.ytimg.com/vi/0JUN9aDxVmI/default.jpg",
+        "width": 120,
+        "height": 90
+      },
+      "medium": {
+        "url": "https://i.ytimg.com/vi/0JUN9aDxVmI/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+      },
+      "high": {
+        "url": "https://i.ytimg.com/vi/0JUN9aDxVmI/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "channelTitle": "Harvard University",
+    "liveBroadcastContent": "none"
+  }
+}
+
+{
+  "kind": "youtube#searchResult",
+  "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/vxW7rcanGdDYFQMSZcal8KeplGY\"",
+  "id": {
+    "kind": "youtube#video",
+    "videoId": "CF7a76CnzHE"
+  },
+  "snippet": {
+    "publishedAt": "2017-03-01T12:04:20Z",
+    "channelId": "UCDmXyuvUm8aDC4asAOgFrgQ",
+    "title": "Rihanna named Harvard University's Humanitarian of the Year",
+    "description": "Video shared via livestream by the Harvard Foundation.",
+    "thumbnails": {
+      "default": {
+        "url": "https://i.ytimg.com/vi/CF7a76CnzHE/default.jpg",
+        "width": 120,
+        "height": 90
+      },
+      "medium": {
+        "url": "https://i.ytimg.com/vi/CF7a76CnzHE/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+      },
+      "high": {
+        "url": "https://i.ytimg.com/vi/CF7a76CnzHE/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "channelTitle": "MassLive",
+    "liveBroadcastContent": "none"
+  }
+}
+
+{
+  "kind": "youtube#searchResult",
+  "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/Q6RNqRbs8roG6zahFg4YGgE9fEw\"",
+  "id": {
+    "kind": "youtube#video",
+    "videoId": "q3axiNgONJg"
+  },
+  "snippet": {
+    "publishedAt": "2016-06-22T20:55:39Z",
+    "channelId": "UCrrGlceKJCco2dc8_EUMzow",
+    "title": "First Day of School at Harvard",
+    "description": "Starting Summer semester at Harvard, getting a legit ID card, beatboxing with Devon, high fiving statues etc... Music by Lorne Chance and Lui Dodds- Come ...",
+    "thumbnails": {
+      "default": {
+        "url": "https://i.ytimg.com/vi/q3axiNgONJg/default.jpg",
+        "width": 120,
+        "height": 90
+      },
+      "medium": {
+        "url": "https://i.ytimg.com/vi/q3axiNgONJg/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+      },
+      "high": {
+        "url": "https://i.ytimg.com/vi/q3axiNgONJg/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "channelTitle": "Josh Drean",
+    "liveBroadcastContent": "none"
+  }
+}
+
+{
+  "kind": "youtube#searchResult",
+  "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/_Inwxchu1TGlvJ2VxfCI1h7GI7E\"",
+  "id": {
+    "kind": "youtube#video",
+    "videoId": "KLGWhDaSC5I"
+  },
+  "snippet": {
+    "publishedAt": "2016-05-02T17:39:10Z",
+    "channelId": "UCi4fcBVyo4CAnmdgXeO-NvA",
+    "title": "Malia Obama To Attend Harvard University After Gap Year",
+    "description": "The eldest Obama daughter will be following in her parents' footsteps. WBZ-TV's Jim Smith reports.",
+    "thumbnails": {
+      "default": {
+        "url": "https://i.ytimg.com/vi/KLGWhDaSC5I/default.jpg",
+        "width": 120,
+        "height": 90
+      },
+      "medium": {
+        "url": "https://i.ytimg.com/vi/KLGWhDaSC5I/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+      },
+      "high": {
+        "url": "https://i.ytimg.com/vi/KLGWhDaSC5I/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "channelTitle": "CBS Boston",
+    "liveBroadcastContent": "none"
+  }
+}
+
+{
+  "kind": "youtube#searchResult",
+  "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/V0k0eafuZxU_y8MuWcOIzuWmcms\"",
+  "id": {
+    "kind": "youtube#video",
+    "videoId": "J3I43uQNTEg"
+  },
+  "snippet": {
+    "publishedAt": "2017-02-26T06:31:30Z",
+    "channelId": "UCz8e6II1H8djrzwslxm7-PA",
+    "title": "R Madhavan Speech at Harvard University America On India in 2030 - FEB 2017",
+    "description": "R Madhavan Speech at Harvard University America On India in 2030 - FEB 2017.",
+    "thumbnails": {
+      "default": {
+        "url": "https://i.ytimg.com/vi/J3I43uQNTEg/default.jpg",
+        "width": 120,
+        "height": 90
+      },
+      "medium": {
+        "url": "https://i.ytimg.com/vi/J3I43uQNTEg/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+      },
+      "high": {
+        "url": "https://i.ytimg.com/vi/J3I43uQNTEg/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "channelTitle": "celeb FUNvideos",
+    "liveBroadcastContent": "none"
+  }
+}
+
+{
+  "kind": "youtube#searchResult",
+  "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/7RiEW5mGDAaSWjLxKyytVAKraoU\"",
+  "id": {
+    "kind": "youtube#video",
+    "videoId": "_Rf2sAYfccg"
+  },
+  "snippet": {
+    "publishedAt": "2016-01-09T14:46:42Z",
+    "channelId": "UCyAp2Q38YlWoDZCJiUpLC1Q",
+    "title": "My First Semester at Harvard University",
+    "description": "Please leave any questions you have in the comments section below. THANK YOU ALL SO MUCH FOR SUPPORTING MY VIDEOS!!! This is a montage video of ...",
+    "thumbnails": {
+      "default": {
+        "url": "https://i.ytimg.com/vi/_Rf2sAYfccg/default.jpg",
+        "width": 120,
+        "height": 90
+      },
+      "medium": {
+        "url": "https://i.ytimg.com/vi/_Rf2sAYfccg/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+      },
+      "high": {
+        "url": "https://i.ytimg.com/vi/_Rf2sAYfccg/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "channelTitle": "TheDanLife",
+    "liveBroadcastContent": "none"
+  }
+}
+
+{
+  "kind": "youtube#searchResult",
+  "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/70Q5jI7hPj4JE91WyAQyZiAQStw\"",
+  "id": {
+    "kind": "youtube#video",
+    "videoId": "w9d-MBfaJrA"
+  },
+  "snippet": {
+    "publishedAt": "2013-06-10T18:01:39Z",
+    "channelId": "UC11-xJV_cf7Pnra7zAvtL6g",
+    "title": "Harvard student's guide to Harvard University",
+    "description": "Across the water in Cambridge, MA lies Harvard University. See one student's take on what makes Harvard such an important place to visit during your stay in ...",
+    "thumbnails": {
+      "default": {
+        "url": "https://i.ytimg.com/vi/w9d-MBfaJrA/default.jpg",
+        "width": 120,
+        "height": 90
+      },
+      "medium": {
+        "url": "https://i.ytimg.com/vi/w9d-MBfaJrA/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+      },
+      "high": {
+        "url": "https://i.ytimg.com/vi/w9d-MBfaJrA/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "channelTitle": "TourismOfficeBoston",
+    "liveBroadcastContent": "none"
+  }
+}
+
+{
+  "kind": "youtube#searchResult",
+  "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/4bWVdbuISDLN8EORSmp1V316t3g\"",
+  "id": {
+    "kind": "youtube#video",
+    "videoId": "Eb__NuP85T8"
+  },
+  "snippet": {
+    "publishedAt": "2017-02-11T22:56:36Z",
+    "channelId": "UCViLvZvgdut2iJiKU33NQrQ",
+    "title": "Pawan Kalyan Speech From Harvard University, USA || India Conference 2017",
+    "description": "Watch Power Star Pawan Kalyan Speech From Harvard University, USA. iDream News is a 24/7 news channel on the digital platform, with exclusive news, ...",
+    "thumbnails": {
+      "default": {
+        "url": "https://i.ytimg.com/vi/Eb__NuP85T8/default.jpg",
+        "width": 120,
+        "height": 90
+      },
+      "medium": {
+        "url": "https://i.ytimg.com/vi/Eb__NuP85T8/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+      },
+      "high": {
+        "url": "https://i.ytimg.com/vi/Eb__NuP85T8/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "channelTitle": "iDream News",
+    "liveBroadcastContent": "none"
+  }
+}
+
+{
+  "kind": "youtube#searchResult",
+  "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/e95rBVtQ_c6MuDydeJ1tUzuPC2w\"",
+  "id": {
+    "kind": "youtube#video",
+    "videoId": "zogGT3z5Itc"
+  },
+  "snippet": {
+    "publishedAt": "2017-03-20T13:39:47Z",
+    "channelId": "UCPdM98zSYUz_Gd8X1LneP5w",
+    "title": "Как поступить в ГАРВАРД БЕСПЛАТНО - Harvard University - Гарвардский Университет",
+    "description": "Как поступить в ГАРВАРД БЕСПЛАТНО (Harvard University, Гарвардский Университет). Поговорим как поступить в американ...",
+    "thumbnails": {
+      "default": {
+        "url": "https://i.ytimg.com/vi/zogGT3z5Itc/default.jpg",
+        "width": 120,
+        "height": 90
+      },
+      "medium": {
+        "url": "https://i.ytimg.com/vi/zogGT3z5Itc/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+      },
+      "high": {
+        "url": "https://i.ytimg.com/vi/zogGT3z5Itc/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "channelTitle": "Оксфордский Университет - OxfordInside.com",
+    "liveBroadcastContent": "none"
+  }
+}
+
+{
+  "kind": "youtube#searchResult",
+  "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/PrbxUH702lgwoky1D39ktsdimZk\"",
+  "id": {
+    "kind": "youtube#video",
+    "videoId": "sxcjDcDbMSY"
+  },
+  "snippet": {
+    "publishedAt": "2017-02-25T04:37:06Z",
+    "channelId": "UCz8e6II1H8djrzwslxm7-PA",
+    "title": "Shashi Tharoor Great Speech at Harvard university on  Feb 12 2017 - Must Watch",
+    "description": "Shashi Tharoor Great Speech at Harvard university on Feb 12 2017 - Must Watch.",
+    "thumbnails": {
+      "default": {
+        "url": "https://i.ytimg.com/vi/sxcjDcDbMSY/default.jpg",
+        "width": 120,
+        "height": 90
+      },
+      "medium": {
+        "url": "https://i.ytimg.com/vi/sxcjDcDbMSY/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+      },
+      "high": {
+        "url": "https://i.ytimg.com/vi/sxcjDcDbMSY/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "channelTitle": "celeb FUNvideos",
+    "liveBroadcastContent": "none"
+  }
+}
+
+{
+  "kind": "youtube#searchResult",
+  "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/jUCM3Go9uSOxkPw8Erpf9-WLPRs\"",
+  "id": {
+    "kind": "youtube#video",
+    "videoId": "x4kfvU-F4hw"
+  },
+  "snippet": {
+    "publishedAt": "2017-03-02T21:00:17Z",
+    "channelId": "UCbMOxKao56zM9sMMqZgf0qA",
+    "title": "A Day in The Life at Harvard | gretchenlovesbeauty",
+    "description": "Before you comment something mean... https://youtu.be/Z4PRIlsU064 Here's a look at my day at Harvard, thanks so much Spenser for filming and showing me ...",
+    "thumbnails": {
+      "default": {
+        "url": "https://i.ytimg.com/vi/x4kfvU-F4hw/default.jpg",
+        "width": 120,
+        "height": 90
+      },
+      "medium": {
+        "url": "https://i.ytimg.com/vi/x4kfvU-F4hw/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+      },
+      "high": {
+        "url": "https://i.ytimg.com/vi/x4kfvU-F4hw/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "channelTitle": "gretchenlovesbeauty",
+    "liveBroadcastContent": "none"
+  }
+}
+
+{
+  "kind": "youtube#searchResult",
+  "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/_w7NL23uPG-zPqM88FAaejPXv-8\"",
+  "id": {
+    "kind": "youtube#video",
+    "videoId": "gCVZIpxUEhg"
+  },
+  "snippet": {
+    "publishedAt": "2016-02-17T19:05:42Z",
+    "channelId": "UCLv7Gzc3VTO6ggFlXY0sOyw",
+    "title": "Conan O’Brien in conversation with Harvard University President Drew Faust",
+    "description": "On February 12, 2016, Comedian and television host Conan O'Brien joined Harvard President Drew Faust at Memorial Hall for an entertaining chat about the ...",
+    "thumbnails": {
+      "default": {
+        "url": "https://i.ytimg.com/vi/gCVZIpxUEhg/default.jpg",
+        "width": 120,
+        "height": 90
+      },
+      "medium": {
+        "url": "https://i.ytimg.com/vi/gCVZIpxUEhg/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+      },
+      "high": {
+        "url": "https://i.ytimg.com/vi/gCVZIpxUEhg/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "channelTitle": "Harvard University",
+    "liveBroadcastContent": "none"
+  }
+}
