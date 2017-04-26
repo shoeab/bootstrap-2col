@@ -411,3 +411,17 @@ line-height: 6;}
 	margin-bottom: 8px;
 }
 
+.post-left-box ul li a.time {
+    font-size: 12px;
+    color: #90949c;
+    font-weight: normal;
+}
+
+.ml-80{
+	margin-left: -50px;
+}
+
+.linkify{
+    cursor: pointer; 
+    cursor: hand;
+}

@@ -24,8 +24,8 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular-sanitize.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-sanitize.js"></script>
 
 </head>
 
@@ -58,7 +58,7 @@
                     </option>
                 </select>
             </div> -->
-            <div class="col-md-12 portfolio-item section" ng-repeat="tweet in tweets" ng-hide='filtered'>
+            <div class="col-md-6 portfolio-item section" ng-hide='filtered'>
             
                <!-- 
                 <h3>
@@ -69,7 +69,54 @@
                 </a>
                 <p></p> -->
 
-                <section class="material-card">
+                <section class="material-card col-md-12" ng-repeat="tweet in tweets" >
+                    <div class="content">
+                        <div class="col-sm-1 col-xs-2">
+                            <a href="https://twitter.com/{{tweet.User.ScreenNameResponse}}">
+                            <img class="img-perfil" src="{{tweet.User.ProfileImageUrl}}" alt="">
+                        </a>
+                        </div>
+                        
+                        <div class="header col-sm-11 col-xs-10">
+                            <a href="https://twitter.com/{{tweet.User.ScreenNameResponse}}">
+                                <strong class="user-title">{{tweet.User.Name}}</strong>
+
+                            </a>
+                            <span class="user-name" data-toggle="tooltip"  title="{{tweet.User.Name}}">@{{tweet.User.ScreenNameResponse}}</span>
+                            &nbsp;&nbsp;
+                            <a href="https://twitter.com/{{tweet.ScreenName}}/status/{{tweet.StatusID}}" class="date-time" data-toggle="tooltip"  title="{{tweet.CreatedAt | date:'h:mm a - MMM d y '}}">{{tweet.CreatedAt | date:'MMM d y '}}</a>
+                            <button class="principal-button" style="display: none;">
+                                <div>
+                                    <img class="plus" src="img/twiiter.png" alt=""><span>+</span>
+                                </div>
+                            </button>
+                            <p class="tweet" ng-bind-html="tweet.Text"></p>
+                            <p class="tweet" ng-bind-html="tweet.Source"></p>
+                            
+                            <span ng-repeat="media in tweet.Entities.MediaEntities">
+                                <img src="{{media.MediaUrl}}" ng-if="media.Type='photo'" class="img-responsive">
+                            </span>
+                        </div>
+                        
+                        
+                    </div>
+                    <hr>
+                    <div class="icons">
+                       
+                        <a href="https://twitter.com/intent/like/complete?tweet_id={{tweet.StatusID}}" style="text-decoration:none;" class="bottom-icons">
+                            <img class="img-star" style="height: 28px;" src="img/love.png" alt="">
+                            <span class="bottom-icon-count">{{tweet.FavoriteCount}}</span>
+                        </a>
+                        <a href="JavaScript:void(0)" class="bottom-icons" >
+                            <img class="img-more" src="img/more.png" alt="">
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="col-md-6 portfolio-item section" ng-hide='filtered'>
+            
+                <section class="material-card col-md-12" ng-repeat="tweet in tweets" >
                     <div class="content">
                         <div class="col-sm-1 col-xs-2">
                             <a href="https://twitter.com/{{tweet.User.ScreenNameResponse}}">
@@ -155,6 +202,7 @@
                     </div>
                 </section>
             </div>
+
             <!-- <div class="col-md-6 portfolio-item section">
                 <a href="#">
                     <img class="img-responsive" src="http://placehold.it/700x400" alt="">
@@ -183,7 +231,7 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-    <script src="js/appTwitter.js"></script>
+    <script src="js/controllers/appTwitter.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>

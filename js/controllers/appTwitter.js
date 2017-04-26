@@ -15,8 +15,6 @@ app.controller('myCtrl', function($scope, $http,$sce) {
 			//console.log(t);
 			$scope.tweets.push(data);
 	      });
-	      /*console.log(response.data.Entities)
-	      $scope.dataType = typeof(response.data);*/
 		});
 
 	$scope.filterTweet = function(){

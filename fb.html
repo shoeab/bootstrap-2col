@@ -26,8 +26,9 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular-sanitize.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-sanitize.js"></script>
+
 
 </head>
 
@@ -76,10 +77,10 @@
     							<div class="post-left-box">
     								<div class="id-img-box"><a href="https://www.facebook.com/HarvardUniversityIT"><img src="img/harvard-uni-it.png"></a></div>
     								<div class="id-name">
-    									<ul>
-    										<li><a href="https://www.facebook.com/HarvardUniversityIT">Harvard University Information Technology</a></li>
-    										<li class="time-post"><small>{{post.created_time | date:'medium'}}</small>&nbsp;&nbsp;<img class="_1lbg img" src="img/icon-public.png" alt="" width="12" height="12"></li>
-    									</ul>
+                                        <ul>
+                                            <li><a href="https://www.facebook.com/HarvardUniversityIT">Harvard University Information Technology</a></li>
+                                            <li class="time-post"><small><a ng-click="openPortfolioURL(post)" class="time linkify">{{post.created_time | date:'medium'}}</a></small>&nbsp;&nbsp;<img class="_1lbg img" src="img/icon-public.png" alt="" width="12" height="12"></li>
+                                        </ul>
     								</div>
     							</div>
     							<div class="post-right-box"></div>
@@ -91,9 +92,9 @@
     							<div class="post-footer">
     								<div class="post-footer-inner">
     									<ul>
-    										<li><a href="#">Like</a></li>
-    										<li><a href="#">Comment</a></li>
-    										<li><a href="#">Share</a></li>
+    										<li><a class="linkify" ng-click="openPortfolioURL(post)" >Like</a></li>
+    										<li><a class="linkify" ng-click="openPortfolioURL(post)" >Comment</a></li>
+    										<li><a class="linkify" ng-click="openPortfolioURL(post)" >Share</a></li>
     									</ul>	
     								</div>
     							</div>
@@ -116,8 +117,8 @@
                                     <div class="id-img-box"><a href="https://www.facebook.com/HarvardUniversityIT"><img src="img/harvard-uni-it.png"></a></div>
                                     <div class="id-name">
                                         <ul>
-                                            <li><a href="https://www.facebook.com/luthercollege">Luther College</a></li>
-                                            <li class="time-post"><small>{{post.created_time | date:'medium'}}</small>&nbsp;&nbsp;<img class="_1lbg img" src="img/icon-public.png" alt="" width="12" height="12"></li>
+                                            <li class="ml-80"><a href="https://www.facebook.com/luthercollege">Luther College</a></li>
+                                            <li class="time-post"><small><a ng-click="openPortfolioURL(post)" class="time linkify">{{post.created_time | date:'medium'}}</a></small>&nbsp;&nbsp;<img class="_1lbg img" src="img/icon-public.png" alt="" width="12" height="12"></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -125,17 +126,17 @@
                             </div>
                         
                                 <div class="post-body">
-                                <div class="post-header-text text-left" ng-if="post.picture">
-                                <img src="{{post.picture}}" class="img-responsive" style="min-width: 200px; height: auto;">
+                                <div class="post-header-text text-left" ng-if="post.full_picture">
+                                <img src="{{post.full_picture}}" class="img-responsive" style="min-width: 200px; height: auto;">
                                 </div>
                                 <div class="post-header-text text-left" ng-bind-html="post.message">
                                 </div>
                                 <div class="post-footer">
                                     <div class="post-footer-inner">
                                         <ul>
-                                            <li><a href="#">Like</a></li>
-                                            <li><a href="#">Comment</a></li>
-                                            <li><a href="#">Share</a></li>
+                                            <li><a class="linkify" ng-click="openPortfolioURL(post)" >Like</a></li>
+                                            <li><a class="linkify" ng-click="openPortfolioURL(post)" >Comment</a></li>
+                                            <li><a class="linkify" ng-click="openPortfolioURL(post)" >Share</a></li>
                                         </ul>   
                                     </div>
                                 </div>
@@ -201,7 +202,7 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-    <script src="js/appFb.js"></script>
+    <script src="js/controllers/appFb.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>

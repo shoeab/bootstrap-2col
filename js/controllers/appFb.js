@@ -10,19 +10,16 @@ app.controller('myCtrl', function($scope, $http,$sce) {
 	  		console.log(response);
 	      // $scope.tweets = response.data;
 	      angular.forEach(response.data.data, function(data,key){
-	      	//t = data.Text;
-			//data.text = data.Text.replace(/#(\w+)/g, '<a href="https://twitter.com/hashtag/$1">#$1</a>');
-			//data.message = data.message.replace(/#(\S*)/g,'<a target="_blank" href="https://twitter.com/hashtag/$1?src=hash">#$1</a>');
-			
 			data.message = urlify(data.message);
+
+			var splits = data.id.split('_');
+			data.page_id = splits[0];
+			data.post_id = splits[1];
 
 			//console.log(data.message);
 			//console.log(t);
 			$scope.posts.push(data);
 	      });
-	      /*console.log(response.data.Entities)
-	      $scope.dataType = typeof(response.data);*/
-	      //$scope.posts = response.data.data;
 	      console.log($scope.posts);
 		});
 
@@ -37,12 +34,13 @@ app.controller('myCtrl', function($scope, $http,$sce) {
 
 			data.message = data.message.replace(/#(\S*)/g,'<a target="_blank" href="https://www.facebook.com/hashtag/$1?source=embed">#$1</a>');
 
+			var splits = data.id.split('_');
+			data.page_id = splits[0];
+			data.post_id = splits[1];
+
 			//console.log(t);
 			$scope.posts_luther.push(data);
 	      });
-	      /*console.log(response.data.Entities)
-	      $scope.dataType = typeof(response.data);*/
-	      //$scope.posts = response.data.data;
 	      console.log($scope.posts_luther);
 		});
 
@@ -51,8 +49,17 @@ app.controller('myCtrl', function($scope, $http,$sce) {
 	    return text.replace(urlRegex, function(url) {
 	        return '<a href="' + url + '">' + url + '</a>';
 	    })
-	    // or alternatively
-	    // return text.replace(urlRegex, '<a href="$1">$1</a>')
+	   
+	}
+
+	$scope.openPortfolioURL = function(post) {
+	    try {
+	        //alert(post.post_id);
+	        var url = 'https://www.facebook.com/'+post.page_id+'/posts/'+post.post_id;
+	        window.open(url, '_system', 'location=yes,width=800,height=650');
+	    } catch (err) {
+	        alert(err);
+	    }
 	}
 
 	/*function urlify(text) {
