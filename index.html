@@ -27,6 +27,50 @@
     <script src="js/angular.min.js"></script>
     <script src="js/angular-sanitize.js"></script>
 
+    <style type="text/css">
+        .tweet-head{
+            float: left;
+            margin-left: 10px;
+            width: 100%;
+        }
+        
+        .text-right{
+            float: right;
+        }
+        .Icon--verified {
+            width: 1.11111em;
+            background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.or….164-4.242.01-1.168%201.176-1.163%203.075.01%204.244z%22%2F%3E%3C%2Fsvg%3E);
+        }
+        .hover-tweet:hover{
+            background-color: rgba(160,200,220,.12);
+        }
+        .Icon {
+            display: inline-block;
+            height: 1.25em;
+            background-repeat: no-repeat;
+            background-size: contain;
+            vertical-align: text-bottom;
+        }
+        .material-card{
+            margin: 3px;
+            padding: 3px 10px 7px 0px;
+        }
+        .tweet-head-main{
+            margin-bottom: -14px;
+        }
+        .portfolio-item{
+            padding-right: 0px;
+        }
+        .header{
+            padding-right: 0px;
+        }
+        @media (max-width: 990px) {
+            .tweet-head-main{
+                display: none;
+            }
+        }
+    </style>
+
 </head>
 
 <body ng-app="myApp" ng-controller="myCtrl">
@@ -39,8 +83,7 @@
         <!-- Page Header -->
         <div class="row">
             <div class="col-lg-6">
-                <h1 class="page-header">Twitter
-                    <small>posts</small>
+                <h1 class="page-header">Related Twitter Timelines
                 </h1>
             </div>
         </div>
@@ -59,9 +102,7 @@
                 </select>
             </div> -->
             <div class="col-md-6 portfolio-item section" ng-hide='filtered'>
-                <h1 class="page-header">Type 1
-                    <small>tweets</small>
-                </h1>
+                
                <!-- 
                 <h3>
                     <a href="#"></a>
@@ -70,8 +111,12 @@
                     <img class="img-responsive" src="http://placehold.it/700x400" alt="">
                 </a>
                 <p></p> -->
-
-                <section class="material-card col-md-12" ng-repeat="tweet in tweets" >
+                <div class="material-card col-md-12 tweet-head-main" >
+                    <h4 class="page-header tweet-head">Tweets
+                        <small>by <a class="customisable-highlight" href="https://twitter.com/HarvardCenter" title="‎@HarvardCenter on Twitter">‎@HarvardCenter</a></small>
+                    </h4>
+                </div>
+                <section class="material-card col-md-12 hover-tweet" ng-repeat="tweet in tweets" id="div-{{tweet.StatusID}}">
                     <div class="content">
                         <div class="col-sm-1 col-xs-2">
                             <a href="https://twitter.com/{{tweet.User.ScreenNameResponse}}">
@@ -84,9 +129,11 @@
                                 <strong class="user-title">{{tweet.User.Name}}</strong>
 
                             </a>
+                            <img src="img/verified.png" ng-if="tweet.User.Verified" title="Verified Account">
                             <span class="user-name" data-toggle="tooltip"  title="{{tweet.User.Name}}">@{{tweet.User.ScreenNameResponse}}</span>
+                            <img src="img/twitter-grey.png" id="{{tweet.StatusID}}" width="20px" class="text-right"  title="Verified Account">
                             &nbsp;&nbsp;
-                            <a href="https://twitter.com/{{tweet.ScreenName}}/status/{{tweet.StatusID}}" class="date-time" data-toggle="tooltip"  title="{{tweet.CreatedAt | date:'h:mm a - MMM d y '}}">{{tweet.CreatedAt | date:'MMM d y '}}</a>
+                            
                             <button class="principal-button" style="display: none;">
                                 <div>
                                     <img class="plus" src="img/twiiter.png" alt=""><span>+</span>
@@ -112,20 +159,24 @@
                         <a href="JavaScript:void(0)" class="bottom-icons" >
                             <img class="img-more" src="img/more.png" alt="">
                         </a>
+                        <a href="https://twitter.com/{{tweet.ScreenName}}/status/{{tweet.StatusID}}" class="date-time text-right" data-toggle="tooltip"  title="{{tweet.CreatedAt | date:'h:mm a - MMM d y '}}">{{tweet.CreatedAt | date:'MMM d, y '}}</a>
                     </div>
                 </section>
             </div>
 
-            <div class="col-md-6 portfolio-item section" ng-hide='filtered'>
-                <h1 class="page-header">Related
-                    <small>tweets</small>
-                </h1>
-                <section class="material-card col-md-12" ng-repeat="tweet in tweets" >
+            <!-- Right Column -->
+            <div class="col-md-6 portfolio-item section" ng-hide='filtered' id="div-{{tweet.StatusID}}">
+                <div class="material-card col-md-12 tweet-head-main" >
+                    <h4 class="page-header tweet-head">Tweets
+                        <small>by <a class="customisable-highlight" href="https://twitter.com/Green_HAH" title="‎@Green_HAH on Twitter">‎@Green_HAH</a></small>
+                    </h4>
+                </div>
+                <section class="material-card col-md-12 hover-tweet" ng-repeat="tweet in tweets" >
                     <div class="content">
                         <div class="col-sm-1 col-xs-2">
                             <a href="https://twitter.com/{{tweet.User.ScreenNameResponse}}">
-                            <img class="img-perfil" src="{{tweet.User.ProfileImageUrl}}" alt="">
-                        </a>
+                                <img class="img-perfil" src="{{tweet.User.ProfileImageUrl}}" alt="">
+                            </a>
                         </div>
                         
                         <div class="header col-sm-11 col-xs-10">
@@ -133,9 +184,11 @@
                                 <strong class="user-title">{{tweet.User.Name}}</strong>
 
                             </a>
+                            <img src="img/verified.png" ng-if="tweet.User.Verified" title="Verified Account">
                             <span class="user-name" data-toggle="tooltip"  title="{{tweet.User.Name}}">@{{tweet.User.ScreenNameResponse}}</span>
+                            <img src="img/twitter-grey.png" id="{{tweet.StatusID}}" width="20px" class="text-right"  title="Verified Account">
                             &nbsp;&nbsp;
-                            <a href="https://twitter.com/{{tweet.ScreenName}}/status/{{tweet.StatusID}}" class="date-time" data-toggle="tooltip"  title="{{tweet.CreatedAt | date:'h:mm a - MMM d y '}}">{{tweet.CreatedAt | date:'MMM d y '}}</a>
+                            
                             <button class="principal-button" style="display: none;">
                                 <div>
                                     <img class="plus" src="img/twiiter.png" alt=""><span>+</span>
@@ -168,6 +221,7 @@
                         <a href="JavaScript:void(0)" class="bottom-icons" >
                             <img class="img-more" src="img/more.png" alt="">
                         </a>
+                        <a href="https://twitter.com/{{tweet.ScreenName}}/status/{{tweet.StatusID}}" class="date-time text-right" data-toggle="tooltip"  title="{{tweet.CreatedAt | date:'h:mm a - MMM d y '}}">{{tweet.CreatedAt | date:'MMM d, y '}}</a>
                     </div>
                 </section>
             </div>
@@ -219,6 +273,156 @@
         </div>
         <!-- /.row -->
 
+        <div class="row">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="page-header">Nearby Tweets
+                    </h1>
+                </div>
+            </div>
+            <div class="col-md-6 portfolio-item section" ng-hide='filtered'>
+                
+                <section class="material-card col-md-12" ng-repeat="tweet in tweets" id="div-{{tweet.StatusID}}">
+                    <div class="content">
+                        <div class="col-sm-1 col-xs-2">
+                            <a href="https://twitter.com/{{tweet.User.ScreenNameResponse}}">
+                            <img class="img-perfil" src="{{tweet.User.ProfileImageUrl}}" alt="">
+                        </a>
+                        </div>
+                        
+                        <div class="header col-sm-11 col-xs-10">
+                            <a href="https://twitter.com/{{tweet.User.ScreenNameResponse}}">
+                                <strong class="user-title">{{tweet.User.Name}}</strong>
+
+                            </a>
+                            <!-- <img src="img/verified.png" ng-if="tweet.User.Verified" title="Verified Account"> -->
+                            
+                            <!-- <img src="img/twitter.png" id="{{tweet.StatusID}}" width="28px" class="text-right"  title="Verified Account"> -->
+                            <iframe class="text-right" 
+                              src="https://platform.twitter.com/widgets/follow_button.html?screen_name=HarvardCenter&show_screen_name=false&show_count=false&size=l"
+                              title="Follow TwitterDev on Twitter"
+                              width="85"
+                              height="40"
+                              style="border: 0; overflow: hidden;"
+                              ></iframe>
+                            &nbsp;&nbsp;
+                            <br>
+                            <span class="user-name" data-toggle="tooltip"  title="{{tweet.User.Name}}">@{{tweet.User.ScreenNameResponse}}</span>
+                            <button class="principal-button" style="display: none;">
+                                <div>
+                                    <img class="plus" src="img/twiiter.png" alt=""><span>+</span>
+                                </div>
+                            </button>
+                            <p class="tweet" ng-bind-html="tweet.Text"></p>
+                            <p class="tweet" ng-bind-html="tweet.Source"></p>
+                            
+                            <span ng-repeat="media in tweet.Entities.MediaEntities">
+                                <img src="{{media.MediaUrl}}" ng-if="media.Type='photo'" class="img-responsive">
+                            </span>
+                        </div>
+                        
+                        
+                    </div>
+                    <hr>
+                </section>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-6 portfolio-item section" ng-hide='filtered' id="div-{{tweet.StatusID}}">
+                
+                <section class="material-card col-md-12" ng-repeat="tweet in tweets" >
+                    <div class="content">
+                        <div class="col-sm-1 col-xs-2">
+                            <a href="https://twitter.com/{{tweet.User.ScreenNameResponse}}">
+                                <img class="img-perfil" src="{{tweet.User.ProfileImageUrl}}" alt="">
+                            </a>
+                        </div>
+                        
+                        <div class="header col-sm-11 col-xs-10">
+                            <a href="https://twitter.com/{{tweet.User.ScreenNameResponse}}">
+                                <strong class="user-title">{{tweet.User.Name}}</strong>
+
+                            </a>
+                            <!-- <img src="img/verified.png" ng-if="tweet.User.Verified" title="Verified Account"> -->
+                            
+                            <!-- <img src="img/twitter.png" id="{{tweet.StatusID}}" width="28px" class="text-right"  title="Verified Account"> -->
+                            <iframe class="text-right" 
+                              src="https://platform.twitter.com/widgets/follow_button.html?screen_name=HarvardCenter&show_screen_name=false&show_count=false&size=l"
+                              title="Follow TwitterDev on Twitter"
+                              width="85"
+                              height="40"
+                              style="border: 0; overflow: hidden;"
+                              ></iframe
+                            Follow @TwitterDev
+                            </a>
+                            &nbsp;&nbsp;
+                            <br>
+                            <span class="user-name" data-toggle="tooltip"  title="{{tweet.User.Name}}">@{{tweet.User.ScreenNameResponse}}</span>
+                            <button class="principal-button" style="display: none;">
+                                <div>
+                                    <img class="plus" src="img/twiiter.png" alt=""><span>+</span>
+                                </div>
+                            </button>
+                            <p class="tweet" ng-bind-html="tweet.Text"></p>
+                            <p class="tweet" ng-bind-html="tweet.Source"></p>
+                            
+                            <span ng-repeat="media in tweet.Entities.MediaEntities">
+                                <img src="{{media.MediaUrl}}" ng-if="media.Type='photo'" class="img-responsive">
+                            </span>
+                        </div>
+                        
+                        
+                    </div>
+                    <hr>
+                </section>
+            </div>
+
+            <div class="col-md-6 portfolio-item section" ng-repeat="tweet in filteredTweets" ng-show='filtered'>
+                
+                <!-- <p>{{tweet.categoryType}}</p>
+                <h3>
+                    <a href="#">{{tweet.twitterName}}</a>
+                </h3>
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                </a>
+                <p>{{tweet.description}}</p> -->
+                <section class="material-card">
+                    <div class="content">
+                        <img class="img-perfil" src="img/photo.jpg" alt="">
+                        <div class="header">
+                            <h3 class="user-title">{{tweet.twitterName}}</h3>
+                            <h4 class="user-name">@{{tweet.screenName}}</h4>
+                        </div>
+                        <button class="principal-button" style="display: none;">
+                            <div>
+                                <img class="plus" src="img/twiiter.png" alt=""><span>+</span>
+                            </div>
+                        </button>
+                        <p class="tweet">{{tweet.description}}</p>
+                        <p class="date-time">4:45pm - 15 Septiembre 2016</p>
+                    </div>
+                    <hr>
+                    <div class="icons">
+                        <img class="img-reply" src="img/reply.png" alt="">
+                        <img class="img-retweet" src="img/retweet.png" alt="">
+                        <img class="img-star" src="img/star.png" alt="">
+                        <img class="img-more" src="img/more.png" alt="">
+                    </div>
+                </section>
+            </div>
+
+            <!-- <div class="col-md-6 portfolio-item section">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h3>
+                    <a href="#">Project Two</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div> -->
+        </div>
+
 
         <!-- Footer -->
         <footer>
@@ -244,6 +448,8 @@
         $(window).load(function(){
             $('[data-toggle="tooltip"]').tooltip(); 
         });
+
+
     </script>
 
 </body>

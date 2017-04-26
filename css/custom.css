@@ -425,3 +425,10 @@ line-height: 6;}
     cursor: pointer; 
     cursor: hand;
 }
+
+
+.customisable-highlight {
+    color: #3b94d9;
+    text-decoration: none;
+    outline: 0;
+}
