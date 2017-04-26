@@ -53,7 +53,7 @@
         }
         .material-card{
             margin: 3px;
-            padding: 3px 10px 7px 0px;
+            padding: 3px 10px 0px 0px;
         }
         .tweet-head-main{
             margin-bottom: -14px;
@@ -63,6 +63,13 @@
         }
         .header{
             padding-right: 0px;
+        }
+        .img-star{
+            height: 20px;
+            width: 23px !important;
+        }
+        hr{
+            margin-bottom: -2px;
         }
         @media (max-width: 990px) {
             .tweet-head-main{
@@ -153,7 +160,7 @@
                     <div class="icons">
                        
                         <a href="https://twitter.com/intent/like/complete?tweet_id={{tweet.StatusID}}" style="text-decoration:none;" class="bottom-icons">
-                            <img class="img-star" style="height: 28px;" src="img/love.png" alt="">
+                            <img class="img-star" src="img/love.png" alt="">
                             <span class="bottom-icon-count">{{tweet.FavoriteCount}}</span>
                         </a>
                         <a href="JavaScript:void(0)" class="bottom-icons" >
@@ -215,7 +222,7 @@
                             <span class="bottom-icon-count">{{tweet.RetweetCount}}</span>
                         </a> -->
                         <a href="https://twitter.com/intent/like/complete?tweet_id={{tweet.StatusID}}" style="text-decoration:none;" class="bottom-icons">
-                            <img class="img-star" style="height: 28px;" src="img/love.png" alt="">
+                            <img class="img-star" src="img/love.png" alt="">
                             <span class="bottom-icon-count">{{tweet.FavoriteCount}}</span>
                         </a>
                         <a href="JavaScript:void(0)" class="bottom-icons" >
@@ -320,10 +327,20 @@
                                 <img src="{{media.MediaUrl}}" ng-if="media.Type='photo'" class="img-responsive">
                             </span>
                         </div>
-                        
+                        <hr>
+                        <div class="icons">
+                       
+                            <a href="https://twitter.com/intent/like/complete?tweet_id={{tweet.StatusID}}" style="text-decoration:none;" class="bottom-icons">
+                                <img class="img-star" src="img/love.png" alt="">
+                                <span class="bottom-icon-count">{{tweet.FavoriteCount}}</span>
+                            </a>
+                            <a href="JavaScript:void(0)" class="bottom-icons" >
+                                <img class="img-more" src="img/more.png" alt="">
+                            </a>
+                            <a href="https://twitter.com/{{tweet.ScreenName}}/status/{{tweet.StatusID}}" class="date-time text-right" data-toggle="tooltip"  title="{{tweet.CreatedAt | date:'h:mm a - MMM d y '}}">{{tweet.CreatedAt | date:'MMM d, y '}}</a>
+                        </div>
                         
                     </div>
-                    <hr>
                 </section>
             </div>
 
@@ -374,43 +391,20 @@
                         
                     </div>
                     <hr>
+                    <div class="icons">
+                       
+                        <a href="https://twitter.com/intent/like/complete?tweet_id={{tweet.StatusID}}" style="text-decoration:none;" class="bottom-icons">
+                            <img class="img-star" src="img/love.png" alt="">
+                            <span class="bottom-icon-count">{{tweet.FavoriteCount}}</span>
+                        </a>
+                        <a href="JavaScript:void(0)" class="bottom-icons" >
+                            <img class="img-more" src="img/more.png" alt="">
+                        </a>
+                        <a href="https://twitter.com/{{tweet.ScreenName}}/status/{{tweet.StatusID}}" class="date-time text-right" data-toggle="tooltip"  title="{{tweet.CreatedAt | date:'h:mm a - MMM d y '}}">{{tweet.CreatedAt | date:'MMM d, y '}}</a>
+                    </div>
                 </section>
             </div>
 
-            <div class="col-md-6 portfolio-item section" ng-repeat="tweet in filteredTweets" ng-show='filtered'>
-                
-                <!-- <p>{{tweet.categoryType}}</p>
-                <h3>
-                    <a href="#">{{tweet.twitterName}}</a>
-                </h3>
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                </a>
-                <p>{{tweet.description}}</p> -->
-                <section class="material-card">
-                    <div class="content">
-                        <img class="img-perfil" src="img/photo.jpg" alt="">
-                        <div class="header">
-                            <h3 class="user-title">{{tweet.twitterName}}</h3>
-                            <h4 class="user-name">@{{tweet.screenName}}</h4>
-                        </div>
-                        <button class="principal-button" style="display: none;">
-                            <div>
-                                <img class="plus" src="img/twiiter.png" alt=""><span>+</span>
-                            </div>
-                        </button>
-                        <p class="tweet">{{tweet.description}}</p>
-                        <p class="date-time">4:45pm - 15 Septiembre 2016</p>
-                    </div>
-                    <hr>
-                    <div class="icons">
-                        <img class="img-reply" src="img/reply.png" alt="">
-                        <img class="img-retweet" src="img/retweet.png" alt="">
-                        <img class="img-star" src="img/star.png" alt="">
-                        <img class="img-more" src="img/more.png" alt="">
-                    </div>
-                </section>
-            </div>
 
             <!-- <div class="col-md-6 portfolio-item section">
                 <a href="#">
